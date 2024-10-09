@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace WebTrangSuc.Models
+{
+    public partial class LichSuGiamGiaSanPham
+    {
+        public int MaLichSuGiamGia { get; set; }
+        public int MaSanPham { get; set; }
+        public int GiaGiamCu { get; set; }
+        public int GiaGiamMoi { get; set; }
+        public DateTime? NgayCapNhat { get; set; }
+
+        public virtual SanPham MaSanPhamNavigation { get; set; } = null!;
+    }
+}
